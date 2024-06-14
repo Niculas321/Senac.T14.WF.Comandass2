@@ -44,10 +44,10 @@
             cyberGroupBox1.Background = true;
             cyberGroupBox1.Background_WidthPen = 3F;
             cyberGroupBox1.BackgroundPen = true;
-            cyberGroupBox1.ColorBackground = Color.White;
-            cyberGroupBox1.ColorBackground_1 = Color.FromArgb(37, 52, 68);
-            cyberGroupBox1.ColorBackground_2 = Color.FromArgb(41, 63, 86);
-            cyberGroupBox1.ColorBackground_Pen = Color.Black;
+            cyberGroupBox1.ColorBackground = Color.Transparent;
+            cyberGroupBox1.ColorBackground_1 = Color.Transparent;
+            cyberGroupBox1.ColorBackground_2 = Color.Transparent;
+            cyberGroupBox1.ColorBackground_Pen = Color.Transparent;
             cyberGroupBox1.ColorLighting = Color.Black;
             cyberGroupBox1.ColorPen_1 = Color.FromArgb(37, 52, 68);
             cyberGroupBox1.ColorPen_2 = Color.FromArgb(41, 63, 86);
@@ -60,13 +60,13 @@
             cyberGroupBox1.Lighting = false;
             cyberGroupBox1.LinearGradient_Background = false;
             cyberGroupBox1.LinearGradientPen = false;
-            cyberGroupBox1.Location = new Point(32, 159);
+            cyberGroupBox1.Location = new Point(63, 138);
             cyberGroupBox1.Name = "cyberGroupBox1";
             cyberGroupBox1.PenWidth = 15;
             cyberGroupBox1.RGB = false;
             cyberGroupBox1.Rounding = true;
             cyberGroupBox1.RoundingInt = 60;
-            cyberGroupBox1.Size = new Size(739, 265);
+            cyberGroupBox1.Size = new Size(460, 473);
             cyberGroupBox1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             cyberGroupBox1.TabIndex = 0;
             cyberGroupBox1.Tag = "Cyber";
@@ -99,7 +99,7 @@
             Usuarios.Lighting = false;
             Usuarios.LinearGradient_Background = false;
             Usuarios.LinearGradientPen = false;
-            Usuarios.Location = new Point(540, 71);
+            Usuarios.Location = new Point(256, 262);
             Usuarios.Name = "Usuarios";
             Usuarios.PenWidth = 15;
             Usuarios.Rounding = true;
@@ -112,6 +112,7 @@
             Usuarios.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             Usuarios.Timer_Effect_1 = 5;
             Usuarios.Timer_RGB = 300;
+            Usuarios.Click += Usuarios_Click;
             // 
             // PedidoCozinha
             // 
@@ -139,7 +140,7 @@
             PedidoCozinha.Lighting = false;
             PedidoCozinha.LinearGradient_Background = false;
             PedidoCozinha.LinearGradientPen = false;
-            PedidoCozinha.Location = new Point(371, 71);
+            PedidoCozinha.Location = new Point(56, 262);
             PedidoCozinha.Name = "PedidoCozinha";
             PedidoCozinha.PenWidth = 15;
             PedidoCozinha.Rounding = true;
@@ -152,6 +153,7 @@
             PedidoCozinha.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             PedidoCozinha.Timer_Effect_1 = 5;
             PedidoCozinha.Timer_RGB = 300;
+            PedidoCozinha.Click += PedidoCozinha_Click;
             // 
             // Comanda
             // 
@@ -179,7 +181,7 @@
             Comanda.Lighting = false;
             Comanda.LinearGradient_Background = false;
             Comanda.LinearGradientPen = false;
-            Comanda.Location = new Point(196, 71);
+            Comanda.Location = new Point(256, 84);
             Comanda.Name = "Comanda";
             Comanda.PenWidth = 15;
             Comanda.Rounding = true;
@@ -192,6 +194,7 @@
             Comanda.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             Comanda.Timer_Effect_1 = 5;
             Comanda.Timer_RGB = 300;
+            Comanda.Click += Comanda_Click;
             // 
             // Cardapio
             // 
@@ -219,7 +222,7 @@
             Cardapio.Lighting = false;
             Cardapio.LinearGradient_Background = false;
             Cardapio.LinearGradientPen = false;
-            Cardapio.Location = new Point(31, 71);
+            Cardapio.Location = new Point(56, 84);
             Cardapio.Name = "Cardapio";
             Cardapio.PenWidth = 15;
             Cardapio.Rounding = true;
@@ -232,6 +235,7 @@
             Cardapio.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             Cardapio.Timer_Effect_1 = 5;
             Cardapio.Timer_RGB = 300;
+            Cardapio.Click += Cardapio_Click;
             // 
             // cyberRichTextBox1
             // 
@@ -245,20 +249,21 @@
             cyberRichTextBox1.ColorPen_1 = Color.Black;
             cyberRichTextBox1.ColorPen_2 = Color.Black;
             cyberRichTextBox1.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            cyberRichTextBox1.Font = new Font("Arial", 11F);
-            cyberRichTextBox1.ForeColor = Color.FromArgb(245, 245, 245);
+            cyberRichTextBox1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cyberRichTextBox1.ForeColor = Color.Black;
             cyberRichTextBox1.Lighting = false;
             cyberRichTextBox1.LinearGradientPen = false;
-            cyberRichTextBox1.Location = new Point(63, 31);
+            cyberRichTextBox1.Location = new Point(63, 30);
             cyberRichTextBox1.Name = "cyberRichTextBox1";
             cyberRichTextBox1.PenWidth = 15;
             cyberRichTextBox1.RGB = false;
             cyberRichTextBox1.Rounding = true;
             cyberRichTextBox1.RoundingInt = 60;
-            cyberRichTextBox1.Size = new Size(671, 74);
+            cyberRichTextBox1.Size = new Size(460, 74);
             cyberRichTextBox1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             cyberRichTextBox1.TabIndex = 1;
             cyberRichTextBox1.Tag = "Cyber";
+            cyberRichTextBox1.TextButton = "⌕";
             cyberRichTextBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             cyberRichTextBox1.Timer_RGB = 300;
             // 
@@ -267,7 +272,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(597, 685);
             Controls.Add(cyberRichTextBox1);
             Controls.Add(cyberGroupBox1);
             MaximizeBox = false;

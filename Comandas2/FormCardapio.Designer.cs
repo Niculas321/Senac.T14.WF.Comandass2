@@ -34,8 +34,8 @@
             cyberButton4 = new ReaLTaiizor.Controls.CyberButton();
             ItemCardapio = new ReaLTaiizor.Controls.CyberRichTextBox();
             PesquisaCardapio = new ReaLTaiizor.Controls.CyberGroupBox();
-            cyberTextBox1 = new ReaLTaiizor.Controls.CyberTextBox();
             Pesquisar = new Label();
+            cyberTextBox1 = new ReaLTaiizor.Controls.CyberTextBox();
             PesquisaCardapio.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,26 +47,26 @@
             TabelaItem.BackgroundPen = true;
             TabelaItem.ColorBackground = Color.White;
             TabelaItem.ColorBackground_Pen = Color.Black;
-            TabelaItem.ColorLighting = Color.FromArgb(29, 200, 238);
-            TabelaItem.ColorPen_1 = Color.FromArgb(29, 200, 238);
-            TabelaItem.ColorPen_2 = Color.FromArgb(37, 52, 68);
+            TabelaItem.ColorLighting = Color.Black;
+            TabelaItem.ColorPen_1 = Color.Black;
+            TabelaItem.ColorPen_2 = Color.Black;
             TabelaItem.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
             TabelaItem.Font = new Font("Arial", 11F);
-            TabelaItem.ForeColor = Color.FromArgb(245, 245, 245);
+            TabelaItem.ForeColor = Color.Black;
             TabelaItem.Lighting = false;
             TabelaItem.LinearGradientPen = false;
-            TabelaItem.Location = new Point(38, 191);
+            TabelaItem.Location = new Point(29, 277);
             TabelaItem.Name = "TabelaItem";
             TabelaItem.PenWidth = 15;
             TabelaItem.RGB = false;
             TabelaItem.Rounding = true;
             TabelaItem.RoundingInt = 60;
-            TabelaItem.Size = new Size(720, 236);
+            TabelaItem.Size = new Size(500, 365);
             TabelaItem.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             TabelaItem.TabIndex = 0;
             TabelaItem.Tag = "Cyber";
             TabelaItem.TextButton = "";
-            TabelaItem.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            TabelaItem.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             TabelaItem.Timer_RGB = 300;
             // 
             // cyberButton2
@@ -95,7 +95,7 @@
             cyberButton2.Lighting = false;
             cyberButton2.LinearGradient_Background = false;
             cyberButton2.LinearGradientPen = false;
-            cyberButton2.Location = new Point(38, 99);
+            cyberButton2.Location = new Point(29, 189);
             cyberButton2.Name = "cyberButton2";
             cyberButton2.PenWidth = 15;
             cyberButton2.Rounding = true;
@@ -135,12 +135,12 @@
             cyberButton3.Lighting = false;
             cyberButton3.LinearGradient_Background = false;
             cyberButton3.LinearGradientPen = false;
-            cyberButton3.Location = new Point(546, 99);
+            cyberButton3.Location = new Point(361, 189);
             cyberButton3.Name = "cyberButton3";
             cyberButton3.PenWidth = 15;
             cyberButton3.Rounding = true;
             cyberButton3.RoundingInt = 70;
-            cyberButton3.Size = new Size(79, 76);
+            cyberButton3.Size = new Size(79, 72);
             cyberButton3.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             cyberButton3.TabIndex = 3;
             cyberButton3.Tag = "Cyber";
@@ -175,12 +175,12 @@
             cyberButton4.Lighting = false;
             cyberButton4.LinearGradient_Background = false;
             cyberButton4.LinearGradientPen = false;
-            cyberButton4.Location = new Point(631, 99);
+            cyberButton4.Location = new Point(446, 189);
             cyberButton4.Name = "cyberButton4";
             cyberButton4.PenWidth = 15;
             cyberButton4.Rounding = true;
             cyberButton4.RoundingInt = 70;
-            cyberButton4.Size = new Size(83, 76);
+            cyberButton4.Size = new Size(83, 72);
             cyberButton4.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             cyberButton4.TabIndex = 4;
             cyberButton4.Tag = "Cyber";
@@ -205,7 +205,7 @@
             ItemCardapio.ForeColor = Color.Black;
             ItemCardapio.Lighting = false;
             ItemCardapio.LinearGradientPen = false;
-            ItemCardapio.Location = new Point(112, 99);
+            ItemCardapio.Location = new Point(122, 189);
             ItemCardapio.Name = "ItemCardapio";
             ItemCardapio.PenWidth = 15;
             ItemCardapio.RGB = false;
@@ -226,7 +226,7 @@
             PesquisaCardapio.Background = true;
             PesquisaCardapio.Background_WidthPen = 3F;
             PesquisaCardapio.BackgroundPen = true;
-            PesquisaCardapio.ColorBackground = Color.White;
+            PesquisaCardapio.ColorBackground = Color.Transparent;
             PesquisaCardapio.ColorBackground_1 = Color.Black;
             PesquisaCardapio.ColorBackground_2 = Color.Black;
             PesquisaCardapio.ColorBackground_Pen = Color.Black;
@@ -240,18 +240,28 @@
             PesquisaCardapio.Lighting = false;
             PesquisaCardapio.LinearGradient_Background = false;
             PesquisaCardapio.LinearGradientPen = false;
-            PesquisaCardapio.Location = new Point(38, 12);
+            PesquisaCardapio.Location = new Point(21, 74);
             PesquisaCardapio.Name = "PesquisaCardapio";
             PesquisaCardapio.PenWidth = 15;
             PesquisaCardapio.RGB = false;
             PesquisaCardapio.Rounding = true;
             PesquisaCardapio.RoundingInt = 60;
-            PesquisaCardapio.Size = new Size(720, 81);
+            PesquisaCardapio.Size = new Size(505, 81);
             PesquisaCardapio.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             PesquisaCardapio.TabIndex = 6;
             PesquisaCardapio.Tag = "Cyber";
             PesquisaCardapio.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             PesquisaCardapio.Timer_RGB = 300;
+            // 
+            // Pesquisar
+            // 
+            Pesquisar.AutoSize = true;
+            Pesquisar.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Pesquisar.Location = new Point(8, 23);
+            Pesquisar.Name = "Pesquisar";
+            Pesquisar.Size = new Size(130, 30);
+            Pesquisar.TabIndex = 1;
+            Pesquisar.Text = "Pesquisar : ";
             // 
             // cyberTextBox1
             // 
@@ -275,7 +285,7 @@
             cyberTextBox1.RGB = false;
             cyberTextBox1.Rounding = true;
             cyberTextBox1.RoundingInt = 60;
-            cyberTextBox1.Size = new Size(561, 47);
+            cyberTextBox1.Size = new Size(335, 47);
             cyberTextBox1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             cyberTextBox1.TabIndex = 0;
             cyberTextBox1.Tag = "Cyber";
@@ -283,22 +293,12 @@
             cyberTextBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             cyberTextBox1.Timer_RGB = 300;
             // 
-            // Pesquisar
-            // 
-            Pesquisar.AutoSize = true;
-            Pesquisar.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Pesquisar.Location = new Point(8, 23);
-            Pesquisar.Name = "Pesquisar";
-            Pesquisar.Size = new Size(130, 30);
-            Pesquisar.TabIndex = 1;
-            Pesquisar.Text = "Pesquisar : ";
-            // 
             // Cardapio
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(582, 677);
             Controls.Add(PesquisaCardapio);
             Controls.Add(ItemCardapio);
             Controls.Add(cyberButton4);
