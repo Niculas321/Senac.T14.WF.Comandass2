@@ -307,6 +307,7 @@
             Controls.Add(TabelaItem);
             Name = "Cardapio";
             Text = "Cardapio";
+            Load += Cardapio_Load;
             PesquisaCardapio.ResumeLayout(false);
             PesquisaCardapio.PerformLayout();
             ResumeLayout(false);

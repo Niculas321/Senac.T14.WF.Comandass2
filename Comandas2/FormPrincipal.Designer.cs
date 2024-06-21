@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             cyberGroupBox1 = new ReaLTaiizor.Controls.CyberGroupBox();
-            Usuarios = new ReaLTaiizor.Controls.CyberButton();
+            btnSairPrincipal = new ReaLTaiizor.Controls.CyberButton();
+            formUsuarios = new ReaLTaiizor.Controls.CyberButton();
             PedidoCozinha = new ReaLTaiizor.Controls.CyberButton();
             Comanda = new ReaLTaiizor.Controls.CyberButton();
             Cardapio = new ReaLTaiizor.Controls.CyberButton();
-            cyberRichTextBox1 = new ReaLTaiizor.Controls.CyberRichTextBox();
+            Pesquisar = new ReaLTaiizor.Controls.CyberRichTextBox();
             cyberGroupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -51,7 +52,8 @@
             cyberGroupBox1.ColorLighting = Color.Black;
             cyberGroupBox1.ColorPen_1 = Color.FromArgb(37, 52, 68);
             cyberGroupBox1.ColorPen_2 = Color.FromArgb(41, 63, 86);
-            cyberGroupBox1.Controls.Add(Usuarios);
+            cyberGroupBox1.Controls.Add(btnSairPrincipal);
+            cyberGroupBox1.Controls.Add(formUsuarios);
             cyberGroupBox1.Controls.Add(PedidoCozinha);
             cyberGroupBox1.Controls.Add(Comanda);
             cyberGroupBox1.Controls.Add(Cardapio);
@@ -73,46 +75,87 @@
             cyberGroupBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             cyberGroupBox1.Timer_RGB = 300;
             // 
-            // Usuarios
+            // btnSairPrincipal
             // 
-            Usuarios.Alpha = 20;
-            Usuarios.BackColor = Color.Transparent;
-            Usuarios.Background = true;
-            Usuarios.Background_WidthPen = 4F;
-            Usuarios.BackgroundPen = true;
-            Usuarios.ColorBackground = Color.FromArgb(255, 255, 192);
-            Usuarios.ColorBackground_1 = Color.Black;
-            Usuarios.ColorBackground_2 = Color.Black;
-            Usuarios.ColorBackground_Pen = Color.Black;
-            Usuarios.ColorLighting = Color.FromArgb(29, 200, 238);
-            Usuarios.ColorPen_1 = Color.FromArgb(37, 52, 68);
-            Usuarios.ColorPen_2 = Color.FromArgb(41, 63, 86);
-            Usuarios.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            Usuarios.Effect_1 = true;
-            Usuarios.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
-            Usuarios.Effect_1_Transparency = 25;
-            Usuarios.Effect_2 = true;
-            Usuarios.Effect_2_ColorBackground = Color.White;
-            Usuarios.Effect_2_Transparency = 20;
-            Usuarios.Font = new Font("Arial Black", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Usuarios.ForeColor = Color.Black;
-            Usuarios.Lighting = false;
-            Usuarios.LinearGradient_Background = false;
-            Usuarios.LinearGradientPen = false;
-            Usuarios.Location = new Point(256, 262);
-            Usuarios.Name = "Usuarios";
-            Usuarios.PenWidth = 15;
-            Usuarios.Rounding = true;
-            Usuarios.RoundingInt = 70;
-            Usuarios.Size = new Size(146, 115);
-            Usuarios.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            Usuarios.TabIndex = 3;
-            Usuarios.Tag = "Cyber";
-            Usuarios.TextButton = "Usuários";
-            Usuarios.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            Usuarios.Timer_Effect_1 = 5;
-            Usuarios.Timer_RGB = 300;
-            Usuarios.Click += Usuarios_Click;
+            btnSairPrincipal.Alpha = 20;
+            btnSairPrincipal.BackColor = Color.Transparent;
+            btnSairPrincipal.Background = true;
+            btnSairPrincipal.Background_WidthPen = 4F;
+            btnSairPrincipal.BackgroundPen = true;
+            btnSairPrincipal.ColorBackground = Color.FromArgb(255, 192, 192);
+            btnSairPrincipal.ColorBackground_1 = Color.Black;
+            btnSairPrincipal.ColorBackground_2 = Color.Black;
+            btnSairPrincipal.ColorBackground_Pen = Color.Black;
+            btnSairPrincipal.ColorLighting = Color.FromArgb(29, 200, 238);
+            btnSairPrincipal.ColorPen_1 = Color.FromArgb(37, 52, 68);
+            btnSairPrincipal.ColorPen_2 = Color.FromArgb(41, 63, 86);
+            btnSairPrincipal.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnSairPrincipal.Effect_1 = true;
+            btnSairPrincipal.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
+            btnSairPrincipal.Effect_1_Transparency = 25;
+            btnSairPrincipal.Effect_2 = true;
+            btnSairPrincipal.Effect_2_ColorBackground = Color.White;
+            btnSairPrincipal.Effect_2_Transparency = 20;
+            btnSairPrincipal.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSairPrincipal.ForeColor = Color.Black;
+            btnSairPrincipal.Lighting = false;
+            btnSairPrincipal.LinearGradient_Background = false;
+            btnSairPrincipal.LinearGradientPen = false;
+            btnSairPrincipal.Location = new Point(135, 421);
+            btnSairPrincipal.Name = "btnSairPrincipal";
+            btnSairPrincipal.PenWidth = 15;
+            btnSairPrincipal.Rounding = true;
+            btnSairPrincipal.RoundingInt = 70;
+            btnSairPrincipal.Size = new Size(171, 52);
+            btnSairPrincipal.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnSairPrincipal.TabIndex = 4;
+            btnSairPrincipal.Tag = "Cyber";
+            btnSairPrincipal.TextButton = "Sair";
+            btnSairPrincipal.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnSairPrincipal.Timer_Effect_1 = 5;
+            btnSairPrincipal.Timer_RGB = 300;
+            btnSairPrincipal.Click += btnSairPrincipal_Click;
+            // 
+            // formUsuarios
+            // 
+            formUsuarios.Alpha = 20;
+            formUsuarios.BackColor = Color.Transparent;
+            formUsuarios.Background = true;
+            formUsuarios.Background_WidthPen = 4F;
+            formUsuarios.BackgroundPen = true;
+            formUsuarios.ColorBackground = Color.FromArgb(255, 255, 192);
+            formUsuarios.ColorBackground_1 = Color.Black;
+            formUsuarios.ColorBackground_2 = Color.Black;
+            formUsuarios.ColorBackground_Pen = Color.Black;
+            formUsuarios.ColorLighting = Color.FromArgb(29, 200, 238);
+            formUsuarios.ColorPen_1 = Color.FromArgb(37, 52, 68);
+            formUsuarios.ColorPen_2 = Color.FromArgb(41, 63, 86);
+            formUsuarios.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            formUsuarios.Effect_1 = true;
+            formUsuarios.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
+            formUsuarios.Effect_1_Transparency = 25;
+            formUsuarios.Effect_2 = true;
+            formUsuarios.Effect_2_ColorBackground = Color.White;
+            formUsuarios.Effect_2_Transparency = 20;
+            formUsuarios.Font = new Font("Arial Black", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            formUsuarios.ForeColor = Color.Black;
+            formUsuarios.Lighting = false;
+            formUsuarios.LinearGradient_Background = false;
+            formUsuarios.LinearGradientPen = false;
+            formUsuarios.Location = new Point(256, 242);
+            formUsuarios.Name = "formUsuarios";
+            formUsuarios.PenWidth = 15;
+            formUsuarios.Rounding = true;
+            formUsuarios.RoundingInt = 70;
+            formUsuarios.Size = new Size(146, 115);
+            formUsuarios.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            formUsuarios.TabIndex = 3;
+            formUsuarios.Tag = "Cyber";
+            formUsuarios.TextButton = "Usuários";
+            formUsuarios.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            formUsuarios.Timer_Effect_1 = 5;
+            formUsuarios.Timer_RGB = 300;
+            formUsuarios.Click += Usuarios_Click;
             // 
             // PedidoCozinha
             // 
@@ -140,7 +183,7 @@
             PedidoCozinha.Lighting = false;
             PedidoCozinha.LinearGradient_Background = false;
             PedidoCozinha.LinearGradientPen = false;
-            PedidoCozinha.Location = new Point(56, 262);
+            PedidoCozinha.Location = new Point(56, 242);
             PedidoCozinha.Name = "PedidoCozinha";
             PedidoCozinha.PenWidth = 15;
             PedidoCozinha.Rounding = true;
@@ -181,7 +224,7 @@
             Comanda.Lighting = false;
             Comanda.LinearGradient_Background = false;
             Comanda.LinearGradientPen = false;
-            Comanda.Location = new Point(256, 84);
+            Comanda.Location = new Point(256, 58);
             Comanda.Name = "Comanda";
             Comanda.PenWidth = 15;
             Comanda.Rounding = true;
@@ -222,7 +265,7 @@
             Cardapio.Lighting = false;
             Cardapio.LinearGradient_Background = false;
             Cardapio.LinearGradientPen = false;
-            Cardapio.Location = new Point(56, 84);
+            Cardapio.Location = new Point(56, 58);
             Cardapio.Name = "Cardapio";
             Cardapio.PenWidth = 15;
             Cardapio.Rounding = true;
@@ -237,35 +280,36 @@
             Cardapio.Timer_RGB = 300;
             Cardapio.Click += Cardapio_Click;
             // 
-            // cyberRichTextBox1
+            // Pesquisar
             // 
-            cyberRichTextBox1.Alpha = 20;
-            cyberRichTextBox1.BackColor = Color.Transparent;
-            cyberRichTextBox1.Background_WidthPen = 3F;
-            cyberRichTextBox1.BackgroundPen = true;
-            cyberRichTextBox1.ColorBackground = Color.White;
-            cyberRichTextBox1.ColorBackground_Pen = Color.Black;
-            cyberRichTextBox1.ColorLighting = Color.Black;
-            cyberRichTextBox1.ColorPen_1 = Color.Black;
-            cyberRichTextBox1.ColorPen_2 = Color.Black;
-            cyberRichTextBox1.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            cyberRichTextBox1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cyberRichTextBox1.ForeColor = Color.Black;
-            cyberRichTextBox1.Lighting = false;
-            cyberRichTextBox1.LinearGradientPen = false;
-            cyberRichTextBox1.Location = new Point(63, 30);
-            cyberRichTextBox1.Name = "cyberRichTextBox1";
-            cyberRichTextBox1.PenWidth = 15;
-            cyberRichTextBox1.RGB = false;
-            cyberRichTextBox1.Rounding = true;
-            cyberRichTextBox1.RoundingInt = 60;
-            cyberRichTextBox1.Size = new Size(460, 74);
-            cyberRichTextBox1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            cyberRichTextBox1.TabIndex = 1;
-            cyberRichTextBox1.Tag = "Cyber";
-            cyberRichTextBox1.TextButton = "⌕";
-            cyberRichTextBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            cyberRichTextBox1.Timer_RGB = 300;
+            Pesquisar.Alpha = 20;
+            Pesquisar.BackColor = Color.Transparent;
+            Pesquisar.Background_WidthPen = 3F;
+            Pesquisar.BackgroundPen = true;
+            Pesquisar.ColorBackground = Color.White;
+            Pesquisar.ColorBackground_Pen = Color.Black;
+            Pesquisar.ColorLighting = Color.Black;
+            Pesquisar.ColorPen_1 = Color.Black;
+            Pesquisar.ColorPen_2 = Color.Black;
+            Pesquisar.CyberRichTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            Pesquisar.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Pesquisar.ForeColor = Color.Black;
+            Pesquisar.Lighting = false;
+            Pesquisar.LinearGradientPen = false;
+            Pesquisar.Location = new Point(63, 30);
+            Pesquisar.Name = "Pesquisar";
+            Pesquisar.PenWidth = 15;
+            Pesquisar.RGB = false;
+            Pesquisar.Rounding = true;
+            Pesquisar.RoundingInt = 60;
+            Pesquisar.Size = new Size(460, 74);
+            Pesquisar.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            Pesquisar.TabIndex = 1;
+            Pesquisar.Tag = "Cyber";
+            Pesquisar.TextButton = "⌕";
+            Pesquisar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            Pesquisar.Timer_RGB = 300;
+         
             // 
             // Principal
             // 
@@ -273,11 +317,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(597, 685);
-            Controls.Add(cyberRichTextBox1);
+            Controls.Add(Pesquisar);
             Controls.Add(cyberGroupBox1);
             MaximizeBox = false;
             Name = "Principal";
             Text = "Principal";
+            Load += Principal_Load;
             cyberGroupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -285,10 +330,11 @@
         #endregion
 
         private ReaLTaiizor.Controls.CyberGroupBox cyberGroupBox1;
-        private ReaLTaiizor.Controls.CyberButton Usuarios;
+        private ReaLTaiizor.Controls.CyberButton formUsuarios;
         private ReaLTaiizor.Controls.CyberButton PedidoCozinha;
         private ReaLTaiizor.Controls.CyberButton Comanda;
         private ReaLTaiizor.Controls.CyberButton Cardapio;
-        private ReaLTaiizor.Controls.CyberRichTextBox cyberRichTextBox1;
+        private ReaLTaiizor.Controls.CyberRichTextBox Pesquisar;
+        private ReaLTaiizor.Controls.CyberButton btnSairPrincipal;
     }
 }

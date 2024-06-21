@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Comandas2
 {
-    public partial class Cardapio : Form
+    public partial class FormUsuarios : Form
     {
-        public Cardapio()
+        public FormUsuarios()
         {
             InitializeComponent();
         }
 
-        private void Cardapio_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

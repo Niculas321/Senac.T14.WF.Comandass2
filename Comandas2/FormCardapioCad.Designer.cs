@@ -288,7 +288,7 @@
             CancelarCardapio.Background = true;
             CancelarCardapio.Background_WidthPen = 4F;
             CancelarCardapio.BackgroundPen = true;
-            CancelarCardapio.ColorBackground = Color.FromArgb(255, 128, 128);
+            CancelarCardapio.ColorBackground = Color.FromArgb(255, 192, 192);
             CancelarCardapio.ColorBackground_1 = Color.Black;
             CancelarCardapio.ColorBackground_2 = Color.Black;
             CancelarCardapio.ColorBackground_Pen = Color.Black;
