@@ -42,12 +42,6 @@ namespace Comandas2
         {
             new FormUsuarios().ShowDialog();
         }
-
-        private void Principal_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSairPrincipal_Click(object sender, EventArgs e)
         {
             Application.Exit();

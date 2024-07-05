@@ -37,8 +37,8 @@
             CheckBoxManterLogado = new ReaLTaiizor.Controls.CyberCheckBox();
             NomeUsuario = new ReaLTaiizor.Controls.CyberTextBox();
             Nome = new Label();
-            cadastrar = new ReaLTaiizor.Controls.CyberButton();
             BotaoVoltarUsuarios = new ReaLTaiizor.Controls.CyberButton();
+            btnNovo = new ReaLTaiizor.Controls.CyberButton();
             SuspendLayout();
             // 
             // EntrarUsuario
@@ -120,6 +120,7 @@
             SairUsuario.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             SairUsuario.Timer_Effect_1 = 5;
             SairUsuario.Timer_RGB = 300;
+            SairUsuario.Click += SairUsuario_Click;
             // 
             // Login
             // 
@@ -279,46 +280,6 @@
             Nome.TabIndex = 8;
             Nome.Text = "Nome :";
             // 
-            // cadastrar
-            // 
-            cadastrar.Alpha = 20;
-            cadastrar.BackColor = Color.Transparent;
-            cadastrar.Background = true;
-            cadastrar.Background_WidthPen = 4F;
-            cadastrar.BackgroundPen = true;
-            cadastrar.ColorBackground = Color.FromArgb(255, 255, 192);
-            cadastrar.ColorBackground_1 = Color.Black;
-            cadastrar.ColorBackground_2 = Color.Black;
-            cadastrar.ColorBackground_Pen = Color.Black;
-            cadastrar.ColorLighting = Color.FromArgb(29, 200, 238);
-            cadastrar.ColorPen_1 = Color.FromArgb(37, 52, 68);
-            cadastrar.ColorPen_2 = Color.FromArgb(41, 63, 86);
-            cadastrar.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            cadastrar.Effect_1 = true;
-            cadastrar.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
-            cadastrar.Effect_1_Transparency = 25;
-            cadastrar.Effect_2 = true;
-            cadastrar.Effect_2_ColorBackground = Color.Black;
-            cadastrar.Effect_2_Transparency = 20;
-            cadastrar.Font = new Font("Arial", 11F);
-            cadastrar.ForeColor = Color.Black;
-            cadastrar.Lighting = false;
-            cadastrar.LinearGradient_Background = false;
-            cadastrar.LinearGradientPen = false;
-            cadastrar.Location = new Point(433, 24);
-            cadastrar.Name = "cadastrar";
-            cadastrar.PenWidth = 15;
-            cadastrar.Rounding = true;
-            cadastrar.RoundingInt = 70;
-            cadastrar.Size = new Size(151, 50);
-            cadastrar.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            cadastrar.TabIndex = 9;
-            cadastrar.Tag = "Cyber";
-            cadastrar.TextButton = "Cadastre-se";
-            cadastrar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            cadastrar.Timer_Effect_1 = 5;
-            cadastrar.Timer_RGB = 300;
-            // 
             // BotaoVoltarUsuarios
             // 
             BotaoVoltarUsuarios.Alpha = 20;
@@ -358,14 +319,56 @@
             BotaoVoltarUsuarios.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             BotaoVoltarUsuarios.Timer_Effect_1 = 5;
             BotaoVoltarUsuarios.Timer_RGB = 300;
+            BotaoVoltarUsuarios.Click += BotaoVoltarUsuarios_Click;
+            // 
+            // btnNovo
+            // 
+            btnNovo.Alpha = 20;
+            btnNovo.BackColor = Color.Transparent;
+            btnNovo.Background = true;
+            btnNovo.Background_WidthPen = 4F;
+            btnNovo.BackgroundPen = true;
+            btnNovo.ColorBackground = Color.FromArgb(192, 192, 255);
+            btnNovo.ColorBackground_1 = Color.Black;
+            btnNovo.ColorBackground_2 = Color.Black;
+            btnNovo.ColorBackground_Pen = Color.Black;
+            btnNovo.ColorLighting = Color.FromArgb(29, 200, 238);
+            btnNovo.ColorPen_1 = Color.FromArgb(37, 52, 68);
+            btnNovo.ColorPen_2 = Color.FromArgb(41, 63, 86);
+            btnNovo.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnNovo.Effect_1 = true;
+            btnNovo.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
+            btnNovo.Effect_1_Transparency = 25;
+            btnNovo.Effect_2 = true;
+            btnNovo.Effect_2_ColorBackground = Color.White;
+            btnNovo.Effect_2_Transparency = 20;
+            btnNovo.Font = new Font("Arial", 11F);
+            btnNovo.ForeColor = Color.Black;
+            btnNovo.Lighting = false;
+            btnNovo.LinearGradient_Background = false;
+            btnNovo.LinearGradientPen = false;
+            btnNovo.Location = new Point(450, 24);
+            btnNovo.Name = "btnNovo";
+            btnNovo.PenWidth = 15;
+            btnNovo.Rounding = true;
+            btnNovo.RoundingInt = 70;
+            btnNovo.Size = new Size(123, 62);
+            btnNovo.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnNovo.TabIndex = 11;
+            btnNovo.Tag = "Cyber";
+            btnNovo.TextButton = "Novo";
+            btnNovo.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnNovo.Timer_Effect_1 = 5;
+            btnNovo.Timer_RGB = 300;
+            btnNovo.Click += btnNovo_Click;
             // 
             // FormUsuarios
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(620, 657);
+            ClientSize = new Size(605, 657);
+            Controls.Add(btnNovo);
             Controls.Add(BotaoVoltarUsuarios);
-            Controls.Add(cadastrar);
             Controls.Add(Nome);
             Controls.Add(NomeUsuario);
             Controls.Add(CheckBoxManterLogado);
@@ -394,5 +397,6 @@
         private Label Nome;
         private ReaLTaiizor.Controls.CyberButton cadastrar;
         private ReaLTaiizor.Controls.CyberButton BotaoVoltarUsuarios;
+        private ReaLTaiizor.Controls.CyberButton btnNovo;
     }
 }

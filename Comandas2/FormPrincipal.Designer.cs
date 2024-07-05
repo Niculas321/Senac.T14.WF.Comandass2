@@ -322,7 +322,6 @@
             MaximizeBox = false;
             Name = "Principal";
             Text = "Principal";
-            Load += Principal_Load;
             cyberGroupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
