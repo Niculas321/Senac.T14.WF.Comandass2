@@ -17,6 +17,18 @@ namespace Comandas2
         public FormUsuarios()
         {
             InitializeComponent();
+            ListarUsuarios();
+        }
+
+        private void ListarUsuarios()
+        {
+           using (var banco = new AppDbContext()) 
+           {
+                // SELECT * FROM Usuarios
+                var usuarios = banco.Usuarios.ToList();    
+                // popular a tabela na tela DataGridView
+                dgvUsuarios.DataSource = usuarios;
+           }
         }
 
         private void SairUsuario_Click(object sender, EventArgs e)
@@ -31,7 +43,7 @@ namespace Comandas2
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-
+            ehNovo = true;
         }
 
         private void atualizarUsuario()
